@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es2016", 
+        "jsx": "react-jsx", 
+        "module": "commonjs",
+        "rootDir": "./src",
+        "baseUrl": "./src",
+        "declaration": true,
+        "declarationMap": true, 
+        "outDir": "./build", 
+        "esModuleInterop": true,
+        "preserveSymlinks": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true
+    }
+}

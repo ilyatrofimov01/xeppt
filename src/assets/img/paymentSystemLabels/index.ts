@@ -1,0 +1,1 @@
+export {default as visaLabel} from './visa-label.svg';
