@@ -35,6 +35,11 @@ export const IconButton = styled('button')({
     justifyContent: "center",
     borderRadius: "20px",
     cursor: "pointer",
+    transition: ".3s ease",
+
+    "&:hover": {
+        transform: "scale(1.1)",
+    },
 });
 
 export const ProfileIconButton = styled(IconButton)({

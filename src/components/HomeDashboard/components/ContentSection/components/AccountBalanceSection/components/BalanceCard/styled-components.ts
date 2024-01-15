@@ -12,6 +12,12 @@ export const BalanceCardContainer = styled('div')({
     backgroundColor: '#FFF8EC',
     width: "230px",
     height: "130px",
+    transition: "transform 0.3s ease-in-out",
+    cursor: "pointer",
+
+    "&:hover": {
+        transform: "scale(1.1)",
+    },
 
     "@media (max-width: 360px)": {
         gap: "15px",
