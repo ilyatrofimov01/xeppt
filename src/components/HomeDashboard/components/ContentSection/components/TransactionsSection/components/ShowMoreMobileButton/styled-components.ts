@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
-export const ShowMoreActionButton = styled('button')({
-    backgroundColor: "#201E1B",
-    color: "#F5CC82",
+export const ShowMoreMobileButtonComponent = styled('button')({
+    display: "none",
+    margin: "16px auto 0 auto",
     padding: "10px 24px",
-    borderRadius: "100px",
     fontWeight: 500,
     lineHeight: "20px",
     fontSize: "16px",
+    borderRadius: "100px",
+    color: "#F5CC82",
+    backgroundColor: "#201E1B",
+    transition: "0.3s ease",
     cursor: "pointer",
-    transition: "0.3s ease-in-out",
+
 
     "&:hover": {
         backgroundColor: "#F5CC82",
@@ -17,6 +20,6 @@ export const ShowMoreActionButton = styled('button')({
     },
 
     "@media (max-width: 360px)": {
-        display: "none"
+        display: "block"
     }
 });

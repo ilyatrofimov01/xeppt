@@ -4,4 +4,9 @@ button {
     outline: none;
     box-shadow: none;
     font-family: Poppins;
+    padding: 0;
+    
+}
+p {
+    margin: 0;
 }

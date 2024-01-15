@@ -21,8 +21,8 @@ export const FilterButton = styled('button')<FilterOptionProps>(({selected}) => 
     boxSizing: "border-box",
     fontSize: "16px",
     lineHeight: "20px",
+    transition: "0.3s ease-in-out",
     "&:hover": {
         backgroundColor: "#F6E7CB",
-        transition: "0.3s ease-in-out",
     }
 }));

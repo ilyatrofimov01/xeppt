@@ -5,4 +5,8 @@ export const  AccountBalanceContainer = styled("div")({
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
+    
+    "@media (max-width: 1024px)": {
+        marginTop: "32px"
+    }
 })

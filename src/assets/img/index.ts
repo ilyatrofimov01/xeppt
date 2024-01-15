@@ -1,2 +1,5 @@
 export {default as currencyImgCad} from "./currency-img-cad.png"
-export {default as xepptCardBackground} from "./xeppt-card-background.svg"
+export {default as xepptCardBackgroundBig} from "./cards-backgrounds/xeppt-card-background.svg"
+export {default as xepptCardBackgroundMedium} from "./cards-backgrounds/xeppt-card-background-medium.svg"
+export {default as xepptCardBackgroundSmall} from "./cards-backgrounds/xeppt-card-background-small.svg"
+export {default as globeImage} from "././globe.svg"

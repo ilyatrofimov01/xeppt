@@ -1,5 +1,5 @@
 import { PaymentCard } from "types/payment-card";
-import { CardBalanceContainer, CardBalanceTitle, CardNumber, CardStatus, CurrentCardBalance, PaymentCardContainer } from "./styled-components";
+import { CardBalanceContainer, CardBalanceTitle, CardItemWrapper, CardNumber, CardStatus, CurrentCardBalance, PaymentCardContainer } from "./styled-components";
 import { getDisplayCardNumber } from "./utils/getDisplayCardNumber";
 
 interface CardItemProps {
@@ -11,13 +11,15 @@ export function CardItem({card}:CardItemProps){
         console.log("Card clicked");
     }
     return (
-        <PaymentCardContainer onClick={handleCardClick} xepptCard={card.xepptCard}>
-            <CardStatus>{card.cardStatus}</CardStatus>
-            <CardBalanceContainer>
-                <CurrentCardBalance>${card.balance}</CurrentCardBalance>
-                <CardBalanceTitle>Available Balance</CardBalanceTitle>
-            </CardBalanceContainer>
-            <CardNumber>{getDisplayCardNumber(card.cardNumber)}</CardNumber>
-        </PaymentCardContainer>
+        <CardItemWrapper>
+            <PaymentCardContainer onClick={handleCardClick} xepptCard={card.xepptCard}>
+                <CardStatus>{card.cardStatus}</CardStatus>
+                <CardBalanceContainer>
+                    <CurrentCardBalance>${card.balance}</CurrentCardBalance>
+                    <CardBalanceTitle>Available Balance</CardBalanceTitle>
+                </CardBalanceContainer>
+                <CardNumber>{getDisplayCardNumber(card.cardNumber)}</CardNumber>
+            </PaymentCardContainer>
+        </CardItemWrapper>
     )
 };

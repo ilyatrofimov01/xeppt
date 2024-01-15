@@ -9,8 +9,12 @@ interface LinkedBankOrCardItemProps {
 }
 
 export function LinkedBankOrCardItem({cardOrBankAccount}:LinkedBankOrCardItemProps) {
+    const handleLinkedBankOrCardClick = ():void => {
+        console.log("Linked bank or card clicked");
+    }
+
     return (
-        <LinkedBankOrCardItemContainer>
+        <LinkedBankOrCardItemContainer onClick={handleLinkedBankOrCardClick}>
             <LinkedBankOrCardItemTitle>{cardOrBankAccount.title} (****{getCardOrAccountLastNumbers(cardOrBankAccount)})</LinkedBankOrCardItemTitle>
         </LinkedBankOrCardItemContainer>
     );

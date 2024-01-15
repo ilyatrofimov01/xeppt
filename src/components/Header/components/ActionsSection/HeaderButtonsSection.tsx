@@ -1,18 +1,22 @@
 import { useState } from "react";
-import { ExpandIcon, HeaderButton, ProfileName, SectionContainer, SectionText } from "./styled-components";
+import { AppLanguage, ExpandIcon, IconButton, ProfileIconButton, ProfileName, SectionContainer } from "./styled-components";
 import { expandArrowIcon, notificationsIcon } from "assets/icons";
 
 export function HeaderButtonsSection(){
     const [isMenuExpanded, setIsMenuExpanded] = useState(false);
+
+    const handleMenuExpandClick = () => {
+        setIsMenuExpanded((prev) => !prev);
+    }
     return (
         <SectionContainer>
-            <SectionText>FR</SectionText>
-            <HeaderButton>
+            <AppLanguage>FR</AppLanguage>
+            <IconButton>
                 <img src={notificationsIcon} alt="notifications icon"/>
-            </HeaderButton>
-            <HeaderButton> PM </HeaderButton>
-            <ProfileName onClick={()=> setIsMenuExpanded((prev) => !prev)}> Peter Morgan </ProfileName>
-            <ExpandIcon expanded={isMenuExpanded} src={expandArrowIcon} alt="avatar"/>
+            </IconButton>
+            <ProfileIconButton> PM </ProfileIconButton>
+            <ProfileName onClick={handleMenuExpandClick}> Peter Morgan </ProfileName>
+            <ExpandIcon onClick={handleMenuExpandClick} expanded={isMenuExpanded} src={expandArrowIcon} alt="avatar"/>
         </SectionContainer>
     );
 };

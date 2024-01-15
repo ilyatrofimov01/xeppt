@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { LinksContainer, StyledLink } from "./styled-compoents";
-import { links } from "./constants";
+import { links } from "../../constants";
 
 export function HeaderLinks() {
     const location = useLocation();

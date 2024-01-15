@@ -1,5 +1,5 @@
 import { Transaction } from "types/transaction";
-import {cardIcon, bankTransfer} from "assets/icons/transactionTypeIcons"
+import {cardIcon, bankTransfer} from "assets/icons/transaction-type-icons"
 import { TransactionIcon } from "../styled-components";
 
 export function getTransactionIcon(transaction: Transaction): JSX.Element {

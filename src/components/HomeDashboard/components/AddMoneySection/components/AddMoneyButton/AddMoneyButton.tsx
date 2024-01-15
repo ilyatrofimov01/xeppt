@@ -2,7 +2,11 @@ import { AddMoneyButtonComponent } from "./styled-components";
 
 export function AddMoneyButton(){
 
+    const handleAddMoneyClick = () => {
+        console.log("Add money")
+    };
+
     return (
-        <AddMoneyButtonComponent>Add money</AddMoneyButtonComponent>
+        <AddMoneyButtonComponent onClick={handleAddMoneyClick}>Add money</AddMoneyButtonComponent>
     );
 };

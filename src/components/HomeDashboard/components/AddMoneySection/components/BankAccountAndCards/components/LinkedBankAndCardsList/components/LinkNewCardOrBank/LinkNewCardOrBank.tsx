@@ -16,7 +16,7 @@ export function LinkNewCardOrBank(){
                 <img src={plusIcon} alt="Add new card icon"/>
             </PlusIconContainer>
             <LinkTitle>
-                Link a new card or bank
+                Link a card or bank
             </LinkTitle>
         </LinkNewCardOrBankContainer>
     );

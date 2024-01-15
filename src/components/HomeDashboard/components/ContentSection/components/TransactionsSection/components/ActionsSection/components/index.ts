@@ -1,2 +1,2 @@
-export * from "./FiltersButtons"
-export * from "./ShowMoreButton"
+export * from "./FiltersButtons";
+export * from "./ShowMoreButton";

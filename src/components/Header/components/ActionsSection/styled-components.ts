@@ -15,9 +15,17 @@ export const SectionContainer = styled('div')({
     marginLeft: "auto",
     fontSize: "18px",
     textTransform: "uppercase",
+
+    "@media (max-width: 768px)": {
+        gap: "16px",
+    },
+
+    "@media (max-width: 360px)": {
+        gap: "8px",
+    },
 });
 
-export const HeaderButton = styled('div')({
+export const IconButton = styled('button')({
     fontSize: "16px",
     width: "40px",
     padding: "8px 0",
@@ -29,16 +37,40 @@ export const HeaderButton = styled('div')({
     cursor: "pointer",
 });
 
+export const ProfileIconButton = styled(IconButton)({
+    "@media (max-width: 360px)": {
+        display: "none"
+    }
+});
+
 export const SectionText = styled('p')({
     color: "#F5CC82",
     whiteSpace: "nowrap",
 });
 
+export const AppLanguage = styled(SectionText)({
+    cursor: "pointer",
+
+    "@media (max-width: 360px)": {
+        fontSize: "14px",
+        fontWeight: 400,
+        lineHeight: "150%",
+    }
+});
+
 export const ProfileName = styled(SectionText)({
     cursor: "pointer",
+
+    "@media (max-width: 768px)": {
+       display: "none",
+    },
 });
 
 export const ExpandIcon = styled('img')<ExpandIconProps>(({expanded})=> ({
     transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
-    transition: "0.5s"
+    transition: "0.5s",
+
+    "@media (max-width: 360px)": {
+        display: "none"
+    }
 }));

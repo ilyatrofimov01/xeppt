@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BalanceCardContainer = styled('div')({
     borderRadius: '10px',
+    boxSizing: 'border-box',
     padding: '16px',
     display: 'flex',
     flexDirection: 'column',
@@ -11,16 +12,25 @@ export const BalanceCardContainer = styled('div')({
     backgroundColor: '#FFF8EC',
     width: "230px",
     height: "130px",
+
+    "@media (max-width: 360px)": {
+        gap: "15px",
+    },
 })
 
 export const CardImage = styled('img')({
     width: '50px',
     height: '50px',
-    marginBottom: '8px'
 })
 
 export const AmountTitle = styled('div')({
     fontSize: '20px',
     fontWeight: '700',
     color: '#000000',
+
+    "@media (max-width: 360px)": {
+        fontSize: '18px',
+        fontWeight: '600',
+        lineHeight: '160%',
+    },
 });

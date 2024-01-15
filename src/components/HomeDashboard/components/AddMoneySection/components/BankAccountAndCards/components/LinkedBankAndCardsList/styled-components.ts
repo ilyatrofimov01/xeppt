@@ -8,4 +8,8 @@ export const LinkedBankAndCardsListContainer = styled('div')({
     width: "100%",
     gap:"16px",
     marginTop: "16px",
+
+    "@media (max-width: 360px)": {
+        gap: "8px",
+    },
 });

@@ -5,7 +5,9 @@ export function ShowMoreButton() {
         console.log("Show more");
     }
     
-    return (<ShowMoreActionButton onClick={handleShowMore}>
+    return (
+        <ShowMoreActionButton onClick={handleShowMore}>
             Show more
-        </ShowMoreActionButton>);
+        </ShowMoreActionButton>
+    );
 }

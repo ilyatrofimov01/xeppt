@@ -8,6 +8,12 @@ export const LinkNewCardOrBankContainer = styled('div')({
     width: "100%",
     height: "100%",
     gap: "16px",
+
+    "@media (max-width: 360px)": {
+        marginTop: "8px",
+        gap: "22px",
+
+    },
 });
 
 export const PlusIconContainer = styled.div`
@@ -20,9 +26,9 @@ export const PlusIconContainer = styled.div`
     height: 40px;
     padding: 8px;
     background-color: #3D3D3D;
+    transition: transform 0.3s ease-in-out;
     ${LinkNewCardOrBankContainer}:hover & {
         transform: scale(1.1);
-        transition: transform 0.3s ease-in-out;
     }
 `;
 
@@ -50,6 +56,14 @@ export const LinkTitle = styled.p `
         &:hover:after {
             width: 100%;
             
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 360px) {
+            font-size: 20px;
         }
 
 `;
